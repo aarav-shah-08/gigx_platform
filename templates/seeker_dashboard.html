@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>All Gigs</h2>
+<ul>
+  {% for gig in gigs %}
+    <li>
+      {{ gig.title }} - ₹{{ gig.price }}
+      {% if gig in favorites %}
+        ⭐ Favorited
+      {% else %}
+        <a href="{% url 'favorite_gig' gig.id %}">❤️ Favorite</a>
+      {% endif %}
+    </li>
+  {% empty %}
+    <li>No gigs available.</li>
+  {% endfor %}
+</ul>
+{% endblock %}

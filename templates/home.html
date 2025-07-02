@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>All Gigs</h2>
+<ul>
+    {% for gig in gigs %}
+    <li>
+        <a href="{% url 'gig_detail' gig.id %}">{{ gig.title }}</a> - ₹{{ gig.amount }}
+        <p>{{ gig.description|truncatechars:50 }}</p>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

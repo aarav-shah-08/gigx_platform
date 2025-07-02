@@ -1,0 +1,6 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>{{ gig.title }}</h2>
+<p>{{ gig.description }}</p>
+<p>₹{{ gig.amount }} | Posted by {{ gig.created_by.username }} on {{ gig.date_posted }}</p>
+{% endblock %}
