@@ -1,6 +1,4 @@
-# GigX Platform 
 
-A Django-based gig management system for Providers and Seekers.
 
 # GigX Platform
 
