@@ -28,19 +28,6 @@ It connects freelancers ("Providers") and clients ("Seekers") through secure aut
 
 ---
 
-## 📊 Architecture Overview
-
-```mermaid
-flowchart TD
-A[User] -->|Login| B[AI Auth System]
-B --> C[Role-Based Dashboard]
-C --> D[Backend APIs]
-D --> E[(PostgreSQL Database)]
-D --> F[Behavioral Analytics Engine]
-F --> G[LLM Summarization Module]
-G --> C
-
-
 ## Setup Instructions
 ```bash
 git clone https://github.com/yourusername/gigx_platform.git
